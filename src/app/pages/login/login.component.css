@@ -1,0 +1,52 @@
+/* No changes needed here if you want to reuse the existing styles */
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Ajustez la hauteur selon vos besoins */
+}
+
+.content-wrapper {
+  width: 100%;
+  max-width: 400px; /* Ajustez la largeur selon vos besoins */
+  text-align: center;
+}
+
+.form-container {
+  padding: 20px;
+}
+
+mat-card {
+  width: 100%;
+  padding: 20px;
+}
+
+mat-card-title {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+
+
+mat-form-field {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+button[type="submit"] {
+  background-color: #47b2e4; /* Couleur de fond du bouton */
+  color: white; /* Couleur du texte du bouton */
+  border: none; /* Supprime les bordures du bouton */
+  padding: 10px 20px; /* Ajoute un espacement à l'intérieur du bouton */
+  font-size: 16px; /* Taille de la police du texte */
+  border-radius: 5px; /* Arrondi les coins du bouton */
+  cursor: pointer; /* Change le curseur au survol */
+  transition: background-color 0.3s; /* Animation de transition */
+}
+
+/* Au survol, change la couleur de fond du bouton */
+button[type="submit"]:hover {
+  background-color: #73c5eb;
+}

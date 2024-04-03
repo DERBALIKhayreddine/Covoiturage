@@ -1,0 +1,63 @@
+<!-- ======= Hero Section ======= -->
+<section id="hero" class="d-flex align-items-center">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
+            <h1>Partagez vos trajets, partagez vos aventures !</h1>
+            <h2>Rejoignez notre communauté de conducteurs et de passagers qui simplifient les déplacements</h2>
+
+        </div>
+        <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200" style="text-align: right;">
+            <img src="assets/img/photo.png" class="img-fluid animated" style="transform: scale(8); margin-right: -100px;" alt="">
+        </div>
+
+
+      </div>
+      <div>
+
+
+  <div class="centere">
+    <mat-form-field>
+      <mat-label>Ville de départ</mat-label>
+      <mat-select [(ngModel)]="selectedDeparture">
+        <mat-option *ngFor="let ride of rides" [value]="ride.departureLocation">{{ ride.departureLocation }}</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Ville d'arrivée</mat-label>
+      <mat-select [(ngModel)]="selectedArrival">
+        <mat-option *ngFor="let ride of rides" [value]="ride.destinationLocation">{{ ride.destinationLocation }}</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Choisir la date</mat-label>
+      <input matInput [matDatepicker]="picker" [(ngModel)]="selectedDate">
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+
+
+    <button mat-raised-button color="primary" (click)="search()">Rechercher</button>
+  </div>
+
+
+
+      </div>
+    </div>
+
+
+
+
+</section>
+   <!-- About Section -->
+<section id="about">
+  <app-about></app-about>
+</section>
+
+<!-- Feature Section -->
+<section id="features">
+  <app-feature></app-feature>
+</section>

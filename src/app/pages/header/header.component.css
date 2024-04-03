@@ -1,0 +1,13 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
+.text-white {
+  color: white;
+}
+.navbar{
+  color: rgb(22, 25, 86);
+}
+#header {
+  background-color: rgba(40, 40, 92); /* Change to the desired background color */
+  color: white; /* Change to the desired font color */
+}

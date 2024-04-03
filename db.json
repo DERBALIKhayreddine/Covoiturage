@@ -1,0 +1,188 @@
+{
+  "users": [
+    {
+      "id": "4959",
+      "fullName": "khariddine derbali",
+      "email": "admin@admin.com",
+      "password": "123456",
+      "role": "admin"
+    },
+    {
+      "id": "4956",
+      "fullName": "khariddine derbali",
+      "email": "user@user.com",
+      "password": "123456",
+      "role": "normal"
+    }
+
+  ],
+  "rides": [
+    {
+      "id": "1356",
+      "driver": "Lina",
+      "drivernumber": "98123123",
+      "car": "Car 3",
+      "availableSeats": 3,
+      "departureLocation": "Tunis",
+      "destinationLocation": "Hammamet",
+      "departureTime": "4/4/2024"
+    },
+    {
+      "id": "1478",
+      "driver": "Khaled",
+      "drivernumber": "98123123",
+      "car": "Car 4",
+      "availableSeats": 2,
+      "departureLocation": "Sousse",
+      "destinationLocation": "Monastir",
+      "departureTime": "4/5/2024"
+    },
+    {
+      "id": "1532",
+      "driver": "Leila",
+      "drivernumber": "98123123",
+      "car": "Car 5",
+      "availableSeats": 4,
+      "departureLocation": "Nabeul",
+      "destinationLocation": "Tunis",
+      "departureTime": "4/6/2024"
+    },
+    {
+      "id": "1654",
+      "driver": "Mohamed",
+      "drivernumber": "98123123",
+      "car": "Car 6",
+      "availableSeats": 3,
+      "departureLocation": "Bizerte",
+      "destinationLocation": "Tabarka",
+      "departureTime": "4/7/2024"
+    },
+    {
+      "id": "1726",
+      "driver": "Fatma",
+      "drivernumber": "98123123",
+      "car": "Car 7",
+      "availableSeats": 2,
+      "departureLocation": "Gabes",
+      "destinationLocation": "Djerba",
+      "departureTime": "4/8/2024"
+    },
+    {
+      "id": "1843",
+      "driver": "Hassan",
+      "drivernumber": "98123123",
+      "car": "Car 8",
+      "availableSeats": 4,
+      "departureLocation": "Tozeur",
+      "destinationLocation": "Tataouine",
+      "departureTime": "4/9/2024"
+    },
+    {
+      "id": "3333",
+      "driver": "Amira",
+      "drivernumber": "98123123",
+      "car": "Car 9",
+      "availableSeats": 3,
+      "departureLocation": "Mahdia",
+      "destinationLocation": "Kairouan",
+      "departureTime": "4/10/2024"
+    },
+    {
+      "id": "3333",
+      "driver": "Youssef",
+      "drivernumber": "98123123",
+      "car": "Car 10",
+      "availableSeats": 2,
+      "departureLocation": "Beja",
+      "destinationLocation": "Jendouba",
+      "departureTime": "4/11/2024"
+    },
+    {
+      "id": "333",
+      "driver": "Ines",
+      "drivernumber": "98123123",
+      "car": "Car 11",
+      "availableSeats": 4,
+      "departureLocation": "Siliana",
+      "destinationLocation": "Zaghouan",
+      "departureTime": "4/12/2024"
+    },
+    {
+      "id": "333",
+      "driver": "Mehdi",
+      "drivernumber": "98123123",
+      "car": "Car 12",
+      "availableSeats": 3,
+      "departureLocation": "Sfax",
+      "destinationLocation": "Gabes",
+      "departureTime": "4/13/2024"
+    },
+    {
+      "id": "3333",
+      "driver": "Mehdi",
+      "drivernumber": "98123123",
+      "car": "Car 1332",
+      "availableSeats": 3,
+      "departureLocation": "Sfax",
+      "destinationLocation": "Gabes",
+      "departureTime": "4/13/2024"
+    },
+    {
+      "id": "333",
+      "driver": "Mehdi",
+      "drivernumber": "98123123",
+      "car": "Car 33",
+      "availableSeats": 3,
+      "departureLocation": "Sfax",
+      "destinationLocation": "Gabes",
+      "departureTime": "4/13/2024"
+    },
+    {
+      "id": "333",
+      "driver": "Mehdi",
+      "drivernumber": "98123123",
+      "car": "Car 132",
+      "availableSeats": 3,
+      "departureLocation": "Sfax",
+      "destinationLocation": "Gabes",
+      "departureTime": "4/13/2024"
+    },
+    {
+      "id": "333",
+      "driver": "Mehdi",
+      "drivernumber": "98123123",
+      "car": "Car 132",
+      "availableSeats": 3,
+      "departureLocation": "Sfax",
+      "destinationLocation": "Gabes",
+      "departureTime": "4/13/2024"
+    },
+    {
+      "id": "2234",
+      "driver": "Mehdi",
+      "drivernumber": "98123123",
+      "car": "Car3",
+      "availableSeats": 3,
+      "departureLocation": "Sfax",
+      "destinationLocation": "Gabes",
+      "departureTime": "4/13/2024"
+    }
+  ],
+
+  "bookings": [
+    {
+      "id": 1,
+      "passenger": "marwen",
+      "ride": {
+        "id": "1234",
+        "driver": "ahmed",
+        "drivernumber": "98123123",
+        "car": "Car 1",
+        "availableSeats": 4,
+        "departureLocation": "sfax",
+        "destinationLocation": "sousse",
+        "departureTime": "2024-11-30"
+      }
+    }
+  ]
+}

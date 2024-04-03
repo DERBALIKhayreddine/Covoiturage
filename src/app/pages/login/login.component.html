@@ -1,0 +1,31 @@
+<div class="container">
+  <div class="content-wrapper">
+    <div class="form-container">
+      <mat-card>
+        <mat-card-title>Connexion</mat-card-title>
+        <mat-card-content>
+          <form [formGroup]="loginForm" (ngSubmit)="loginUser()">
+            <mat-form-field>
+              <mat-label>Email</mat-label>
+              <input matInput formControlName="email">
+              <small *ngIf="loginForm.controls['email'].invalid && (loginForm.controls['email'].dirty || loginForm.controls['email'].touched)">
+                <div *ngIf="loginForm.controls['email'].errors?.['required']" class="text-danger">champ requis</div>
+              </small>
+            </mat-form-field>
+            <!-- Password field -->
+            <mat-form-field>
+              <mat-label>Mot de passe</mat-label>
+              <input type="password" matInput formControlName="password">
+              <small *ngIf="loginForm.controls['password'].invalid && (loginForm.controls['password'].dirty || loginForm.controls['password'].touched)">
+                <div *ngIf="loginForm.controls['password'].errors?.['required']" class="text-danger">champ requis</div>
+              </small>
+            </mat-form-field>
+            <button mat-raised-button color="primary" [disabled]="loginForm.invalid" type="submit">Se connecter</button>
+          </form>
+        </mat-card-content>
+      </mat-card>
+      <br>
+      <strong>Pas encore de compte ? <a routerLink="/register">S'inscrire</a></strong>
+    </div>
+  </div>
+</div>

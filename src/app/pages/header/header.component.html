@@ -1,0 +1,22 @@
+<!-- ======= Header ======= -->
+<header id="header" class="fixed-top ">
+    <div class="container d-flex align-items-center">
+        <a class="logo me-auto"><img src="assets/img/logo1.png" alt="" class="img-fluid"></a>
+
+      <nav id="navbar" class="navbar"  >
+        <ul>
+          <li><a class="nav-link scrollto active"  routerLink="/hero" >Home</a></li>
+          <li><a class="nav-link scrollto" routerLink="/about">About</a></li>
+          <li><a class="nav-link scrollto"  routerLink="/rechercheAvancee">Recherche avancéé</a></li>
+
+
+          <li class="nav-item" *ngIf="isLoggedIn() && isAdmin()"><a style="color: white;" routerLink="/admindashboard" class="nav-link">Dashboard</a></li>
+    <li class="nav-item" *ngIf="isLoggedIn() && isnomal()"><a style="color: white;" routerLink="/userdashbord" class="nav-link">Dashboard</a></li>
+
+         <li><a class="getstarted scrollto"  routerLink="/login" *ngIf="!isLoggedIn()">Authentification</a></li>
+         <li><a class="getstarted scrollto"  *ngIf="isLoggedIn()" (click)="logout()">Déconnexion</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+    </div>
+  </header><!-- End Header -->

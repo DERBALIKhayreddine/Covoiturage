@@ -1,0 +1,12 @@
+.about {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+  /* CSS pour agrandir le texte */
+.about ul li {
+  font-size: 18px; /* Taille de la police du texte */
+}
+
+  

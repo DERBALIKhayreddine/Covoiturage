@@ -1,0 +1,25 @@
+<!--<div class="centered">
+  <mat-form-field>
+    <mat-label>Ville de départ</mat-label>
+    <mat-select [(ngModel)]="selectedDeparture">
+      <mat-option *ngFor="let ride of rides" [value]="ride.departureLocation">{{ ride.departureLocation }}</mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Ville d'arrivée</mat-label>
+    <mat-select [(ngModel)]="selectedArrival">
+      <mat-option *ngFor="let ride of rides" [value]="ride.destinationLocation">{{ ride.destinationLocation }}</mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Choisir la date</mat-label>
+    <input matInput [matDatepicker]="picker" [(ngModel)]="selectedDate">
+    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+  </mat-form-field>
+
+  <button mat-raised-button color="primary"  >Rechercher</button>
+</div>
+-->

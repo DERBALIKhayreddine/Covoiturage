@@ -1,0 +1,48 @@
+
+  
+  
+  
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+ 
+  .centere {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+  
+  .centered mat-form-field,
+  .centered button {
+    margin-bottom: 20px; /* Espacement entre les éléments */
+  }
+  
+  /* Style amélioré pour le bouton */
+  button {
+    background-color: #47b2e4;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #73c5eb;
+  }
+  #about {
+    height: 100vh; /* Occupe toute la hauteur de la fenêtre */
+  }
+  #features {
+    margin-top: 2vh; /* Déplace la section en dessous de la section "About" */
+    height: 100vh;
+  }
+    
+  
