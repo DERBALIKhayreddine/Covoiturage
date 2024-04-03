@@ -3,6 +3,7 @@ import { Ride } from '../models/carpooling';
 import { CarpoolingService } from '../services/carpooling.service';
 import { MatDialog } from '@angular/material/dialog';
 import { RidedialogComponent } from '../ridedialog/ridedialog.component';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-hero',
@@ -15,7 +16,7 @@ export class HeroComponent implements OnInit{
   selectedArrival: string | undefined;
   selectedDate: Date | undefined = new Date(); // Initialize selectedDate
 
-  constructor(private service: CarpoolingService, public dialog: MatDialog) { }
+  constructor(private service: CarpoolingService, public dialog: MatDialog ,private toastr:ToastrService) { }
 
   ngOnInit(): void {
     this.getAllRides();
@@ -41,6 +42,7 @@ export class HeroComponent implements OnInit{
 
     if (this.selectedDeparture && this.selectedArrival) {
       console.log('Searching...');
+      this.toastr.info("En train de rechercher")
 
       const filteredRides = this.rides.filter(ride => {
         return ride.departureLocation === this.selectedDeparture &&
@@ -56,6 +58,7 @@ export class HeroComponent implements OnInit{
       });
     } else {
       console.log('Please select departure and arrival.');
+      this.toastr.info("choisir lien de depart et lien d'arriver")
     }
   }
 

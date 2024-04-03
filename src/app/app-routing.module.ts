@@ -5,7 +5,6 @@ import { LoginComponent } from './pages/login/login.component';
 import { AdminDashbordComponent } from './pages/admin-dashbord/admin-dashbord.component';
 import { UserDashbordComponent } from './pages/user-dashbord/user-dashbord.component';
 import { AuthGuard } from './guards/auth.guard';
-import { HomeComponent } from './pages/home/home.component';
 import { AboutComponent } from './about/about.component';
 import { HeaderComponent } from './pages/header/header.component';
 import { HeroComponent } from './hero/hero.component';
@@ -20,7 +19,7 @@ const routes: Routes = [
 
   {
     path:'hero',  //le nom du path
-    component:HeroComponent,   //le composant
+    component:HeroComponent   //le composant
   },
   {
     path:'header',  //le nom du path
@@ -45,10 +44,6 @@ const routes: Routes = [
   {
     path:'userdashbord',
     component:UserDashbordComponent,canActivate :[AuthGuard]
-  },
-  {
-    path:'home',
-    component:HomeComponent
   },
   {
     path:'rechercheAvancee',

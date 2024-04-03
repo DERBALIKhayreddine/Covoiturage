@@ -17,6 +17,8 @@ import { MatDatepickerModule } from "@angular/material/datepicker";
 import { MatNativeDateModule } from "@angular/material/core";
 import { MatDialogModule } from "@angular/material/dialog";
 import { MatTableModule } from "@angular/material/table";
+import {MatCheckboxModule} from '@angular/material/checkbox';
+import {MatGridListModule} from '@angular/material/grid-list';
 
 
 import {MatSidenavModule} from '@angular/material/sidenav';
@@ -45,7 +47,7 @@ import { FormsModule } from "@angular/forms";
     MatDialogModule,
     MatTableModule,
     MatSidenavModule,
-    MatCardModule,RouterModule,FormsModule,
+    MatCardModule,RouterModule,FormsModule,MatCheckboxModule,MatGridListModule
 
 
 
