@@ -1,12 +1,31 @@
 .about {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+  font-family: "Jost", sans-serif;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%; /* Pour occuper toute la largeur de l'écran */
+  text-align: center; /* Pour centrer le texte */
 }
-
-  /* CSS pour agrandir le texte */
+.about .content {
+  margin-top: 50px; /* Ajustez la valeur selon vos besoins */
+}
+/* CSS pour agrandir le texte */
 .about ul li {
-  font-size: 18px; /* Taille de la police du texte */
+  font-family: "Jost", sans-serif;
+  font-size: 23px; /* Taille de la police du texte */
+  color: #012970;
+
 }
 
-  
+.about p {
+  font-family: "Jost", sans-serif;
+  font-size: 19px; /* Taille de la police du texte */
+  color: rgb(111, 139, 144)
+
+}
+.about h2 {
+  font-family: "Jost", sans-serif;
+
+  font-size: 40px; /* Taille de la police du texte */
+}
+

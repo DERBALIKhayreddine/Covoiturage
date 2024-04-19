@@ -17,25 +17,32 @@
 }
 
   
-  .centered mat-form-field,
-  .centered button {
-    margin-bottom: 20px; /* Espacement entre les éléments */
+  .centere mat-form-field{
+    margin-bottom: 20px; /* Espacement entre les champs de formulaire */
+
+  }
+  .centere button {
+    margin-bottom: 90px; /* Espacement entre les éléments */
+    margin-left: 20px; /* Espacement entre le bouton et les éléments précédents */
+
   }
   
   /* Style amélioré pour le bouton */
   button {
-    background-color: #47b2e4;
+    text-align: center;
+    background-color: #00223B;
     color: white;
     border: none;
-    padding: 10px 20px;
     font-size: 16px;
     border-radius: 5px;
-    cursor: pointer;
     transition: background-color 0.3s;
+    height: 56px;
+    padding: 25px;
   }
   
+  
   button:hover {
-    background-color: #73c5eb;
+    background-color: #0994DC;
   }
   #about {
     height: 100vh; /* Occupe toute la hauteur de la fenêtre */

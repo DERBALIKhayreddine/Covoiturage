@@ -12,28 +12,28 @@
       <small *ngIf="registerForm.controls['fullName'].invalid && (registerForm.controls['fullName'].dirty || registerForm.controls['fullName'].touched)">
         <div *ngIf="registerForm.controls['fullName'].errors?.['required']" class="text-danger">champ requis</div>
       </small>
-    </mat-form-field>
+    </mat-form-field><br/>
     <mat-form-field>
       <mat-label>Email</mat-label>
       <input matInput formControlName="email">
       <small *ngIf="registerForm.controls['email'].invalid && (registerForm.controls['email'].dirty || registerForm.controls['email'].touched)">
         <div *ngIf="registerForm.controls['email'].errors?.['required']" class="text-danger">champ requis</div>
       </small>
-    </mat-form-field>
+    </mat-form-field><br/>
     <mat-form-field>
       <mat-label>Mot de passe</mat-label>
       <input  type="password"  matInput formControlName="password">
       <small *ngIf="registerForm.controls['password'].invalid && (registerForm.controls['password'].dirty || registerForm.controls['password'].touched)">
         <div *ngIf="registerForm.controls['password'].errors?.['required']" class="text-danger">champ requis</div>
       </small>
-    </mat-form-field>
+    </mat-form-field><br/>
     <mat-form-field>
       <mat-label>Confirmer mot de passe</mat-label>
       <input type="password" matInput formControlName="confirmPassword">
       <small *ngIf="registerForm.controls['confirmPassword'].invalid && (registerForm.controls['confirmPassword'].dirty || registerForm.controls['confirmPassword'].touched)">
         <div *ngIf="registerForm.controls['confirmPassword'].errors?.['required']" class="text-danger">champ requis</div>
       </small>
-    </mat-form-field>
+    </mat-form-field><br/>
     <small >
       <div *ngIf="registerForm.errors?.['passwordMismatch']" class="text-danger">mot de passe n'est pas correct </div>
     </small>
@@ -42,11 +42,14 @@
 
     </div>
     <br>
-    <strong>Vous avez déja un compte ?<a routerLink="/login">S'authentifier</a></strong>
+    <strong class="register-link">Vous avez déja un compte ?<a routerLink="/login">S'authentifier</a></strong>
   </form>
 
 </mat-card-content>
 </mat-card>
+</div>
+<div class="image-container">
+  <img  src="assets/img/register.PNG" alt="Image">
 </div>
 </div>
 </div>

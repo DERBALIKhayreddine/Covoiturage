@@ -38,7 +38,7 @@
 
 .card-img-top {
   flex: 0 0 auto;
-  width: 150px; /* Adjust image width as needed */
+  width: 200px; /* Adjust image width as needed */
   height: auto;
   margin-right: 20px;
 }
@@ -51,6 +51,56 @@
 .mat-card-content {
   flex: 1;
 }
+.col-md-6 {
+  width: 80%; /* Adjust the width as needed */
+}
 .col-md-9 {
-  width: 75%; /* Adjust the width as needed */
+  width: 70%; /* Adjust the width as needed */
+}
+.centere {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.centere mat-form-field{
+  margin-bottom: 20px; /* Espacement entre les champs de formulaire */
+
+}
+.centere button {
+  margin-bottom: 90px; /* Espacement entre les éléments */
+  margin-left: 20px; /* Espacement entre le bouton et les éléments précédents */
+
+}
+
+/* Style amélioré pour le bouton */
+button {
+  text-align: center;
+  background-color:#0994DC ;
+  color: white;
+  border: none;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  height: 56px;
+  padding: 25px;
+}
+
+
+button:hover {
+  background-color:#00223B ;
+}
+/* Animation de survol */
+.card-content:hover {
+  transform: translateY(-5px); /* Déplace l'élément vers le haut de 5px lors du survol */
+}
+
+/* Transition pour le changement de couleur de fond */
+.mat-card {
+  transition: background-color 0.3s; /* Transition sur la couleur de fond pendant 0.3s */
+}
+
+.mat-card:hover {
+  background-color: #f0f0f0; /* Change la couleur de fond lors du survol */
 }

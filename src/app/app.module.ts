@@ -21,6 +21,7 @@ import { FeatureComponent } from './feature/feature.component';
 import { RidedialogComponent } from './ridedialog/ridedialog.component';
 import { RechercheAvanceeComponent } from './recherche-avancee/recherche-avancee.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,6 +37,8 @@ import { RechercheAvanceeComponent } from './recherche-avancee/recherche-avancee
     FeatureComponent,
     RidedialogComponent,
     RechercheAvanceeComponent,
+    
+
   ],
   imports: [
     BrowserModule,
@@ -45,6 +48,7 @@ import { RechercheAvanceeComponent } from './recherche-avancee/recherche-avancee
     HttpClientModule,
     ReactiveFormsModule,
     ToastrModule.forRoot(),
+
 
 
   ],
