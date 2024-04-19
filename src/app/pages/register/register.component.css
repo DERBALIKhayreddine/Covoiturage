@@ -6,36 +6,57 @@
 }
 
 .content-wrapper {
-  width: 100%;
-  max-width: 400px; /* Ajustez la largeur selon vos besoins */
-  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%; /* Ajustez la largeur selon vos besoins */
+  max-width: 1400px; /* Limitez la largeur maximale si nécessaire */
+  gap: 150px; /* Espacement entre l'image et la carte */
+
+  
 }
 
 .form-container {
+  flex: 1;
   padding: 20px;
 }
-
-mat-card {
-  width: 100%;
-  padding: 20px;
+.register-link {
+  text-align: center; /* Centre le texte horizontalement */
+  margin-top: 20px; /* Ajoute un espacement au-dessus du texte */
+  color: #00223B;
 }
-
 mat-card-title {
   text-align: center;
   font-size: 24px;
   margin-bottom: 20px;
+  color: #0994DC;
+
 }
-
-
-
 mat-form-field {
   width: 100%;
   margin-bottom: 20px;
 }
 
+
+.image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.image-container img {
+    flex: 1;
+    max-width: 1500%; /* Ajustez la largeur selon vos besoins */
+    margin-top: 20px; /* Déplace l'image vers le bas */
+  
+  
+}
 button[type="submit"] {
-  background-color: #47b2e4; /* Couleur de fond du bouton */
-  color: white; /* Couleur du texte du bouton */
+  display: block; /* Permet d'utiliser les marges automatiques */
+  margin: 0 auto; /* Centre le bouton horizontalement */
+  background-color: #0994DC; /* Couleur de fond du bouton */  color: white; /* Couleur du texte du bouton */
   border: none; /* Supprime les bordures du bouton */
   padding: 10px 20px; /* Ajoute un espacement à l'intérieur du bouton */
   font-size: 16px; /* Taille de la police du texte */
@@ -44,7 +65,4 @@ button[type="submit"] {
   transition: background-color 0.3s; /* Animation de transition */
 }
 
-/* Au survol, change la couleur de fond du bouton */
-button[type="submit"]:hover {
-  background-color: #73c5eb;
-}
+

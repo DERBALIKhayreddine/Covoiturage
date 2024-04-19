@@ -1,0 +1,28 @@
+.features h2 {
+    font-family: "Jost", sans-serif;
+    font-size: 40px; /* Taille de la police du texte */
+
+  }
+  .features p {
+    font-family: "Jost", sans-serif;
+    font-size: 23px; /* Taille de la police du texte */
+    color: rgb(111, 139, 144)
+  
+  }
+  .custom-img {
+    max-width: 1000%; /* Ajustez la largeur maximale de l'image selon vos besoins */
+    height: auto; /* Permet à l'image de conserver son ratio hauteur/largeur */
+  }
+  @keyframes up-down {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(20px); /* Ajustez la valeur de translation selon vos besoins */
+    }
+  }
+  
+  .animated {
+    animation: up-down 2s ease-in-out infinite alternate-reverse both;
+  }
+  

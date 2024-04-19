@@ -1,45 +1,101 @@
 <section id="about" class="about full-width">
   <div class="container" data-aos="fade-up">
     <br>
-    <br><br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="centere">
+      <mat-form-field>
+        <mat-label>Ville de départ</mat-label>
+        <mat-select [(ngModel)]="selectedDeparture">
+          <mat-option *ngFor="let ride of rides" [value]="ride.departureLocation">{{ ride.departureLocation }}</mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>Ville d'arrivée</mat-label>
+        <mat-select [(ngModel)]="selectedArrival">
+          <mat-option *ngFor="let ride of rides" [value]="ride.destinationLocation">{{ ride.destinationLocation }}</mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>Choisir la date</mat-label>
+        <input matInput [matDatepicker]="picker" [(ngModel)]="selectedDate">
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+
+      <button centere button (click)="search()">Rechercher</button>
+    </div>
+    <br>
+    <br>
+    <br>
     <div class="row">
       <!-- Side filter menu with checkboxes -->
-      <div class="col-md-2">
+      <div class="col-md-3">
         <mat-card>
           <mat-card-content>
-            <h5 class="card-title">Filters</h5>
-            Cigarette autorisée
-            <mat-checkbox class="form-check" color="primary">
-              <mat-icon>smoking_rooms</mat-icon>
-            </mat-checkbox>
-            Bagage
-            <mat-checkbox class="form-check" color="primary">
-              <mat-icon>card_travel</mat-icon>
-            </mat-checkbox>
-            Climatisation
+            <div fxLayout="column">
+              <h5 class="card-title">Filters</h5>
+              <mat-checkbox class="form-check" color="primary">
+                <mat-icon>smoking_rooms</mat-icon>
+              </mat-checkbox>
+              Cigarette autorisée
+              <mat-checkbox class="form-check" color="primary">
+                <mat-icon>card_travel</mat-icon>
+              </mat-checkbox>
+              Backage autorisée
+            </div>
             <mat-checkbox class="form-check" color="primary">
               <mat-icon>ac_unit</mat-icon>
+              Climatisation
             </mat-checkbox>
-            <!-- Add more checkboxes as needed -->
+          </mat-card-content>
+        </mat-card>
+        <br/><br/>
+        <mat-card>
+          <mat-card-content>
+            <div fxLayout="column">
+              <h5 class="card-title">Heure de départ</h5>
+              <mat-checkbox class="form-check" color="primary">
+                <mat-icon>schedule</mat-icon>
+              </mat-checkbox>
+              Avant 06:00     <br/>
+              <mat-checkbox class="form-check" color="primary">
+                <mat-icon>schedule</mat-icon>
+              </mat-checkbox>
+              06:00 - 12:00    <br/>
+              <mat-checkbox class="form-check" color="primary">
+                <mat-icon>schedule</mat-icon>
+              </mat-checkbox>
+              12:01 - 18:00    <br/>
+              <mat-checkbox class="form-check" color="primary">
+                <mat-icon>schedule</mat-icon>
+              </mat-checkbox>
+              Aprés 18:00    <br/>
+            </div>
           </mat-card-content>
         </mat-card>
       </div>
-
       <!-- Displaying one card on the right -->
-      <div class="col-md-10">
-        <mat-grid-list cols="2" rowHeight="350px" gutterSize="10px">
+      <div class="col-md-9">
+        <mat-grid-list cols="1" rowHeight="200px" >
           <mat-grid-tile *ngFor="let ride of rides">
-            <mat-card class="mb-3">
+            <mat-card class="mb-9">
               <div class="card-content">
                 <img mat-card-image class="card-img-top" [src]="ride.carImg" alt="Photo of a Shiba Inu">
                 <mat-card-content>
-                  <h5 class="card-title">{{ ride.departureLocation }} <mat-icon>arrow_forward</mat-icon> {{ ride.destinationLocation }}</h5>
+                  <h5 class="card-title">{{ ride.departureLocation }} <mat-icon>keyboard_arrow_right</mat-icon> {{ ride.destinationLocation }}</h5>
                   <p class="card-text"><mat-icon>calendar_today</mat-icon> Temp de depart: {{ ride.departureTime }}</p>
-                  <p class="card-text">	<mat-icon>group</mat-icon> Places disponible: {{ ride.availableSeats }}</p>
+                  <p class="card-text"> <mat-icon>group</mat-icon> Places disponible: {{ ride.availableSeats }}</p>
                   <p class="card-text"> <mat-icon>verified_user</mat-icon> {{ride.driver}}</p>
                   <p class="card-text"></p>
-
-
                 </mat-card-content>
               </div>
             </mat-card>
